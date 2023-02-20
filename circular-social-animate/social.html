@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <script src="https://kit.fontawesome.com/f1524c8187.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="social.css">
+</head>
+
+<body>
+
+    <div class="menu">
+        <div class="toggle">
+            <i class="fa-sharp fa-solid fa-share-nodes"></i>
+        </div>
+        <li style="--i:0; --clr:#3b5999;">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li style="--i:1; --clr:#55acee;">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li style="--i:2; --clr:#e4405f;">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </li>
+    </div>
+
+    <script>
+        let toggle = document.querySelector(".toggle");
+        let menu = document.querySelector(".menu");
+
+        toggle.onclick = function () {
+            menu.classList.toggle("activate")
+        };
+    </script>
+</body>
+
+</html>
